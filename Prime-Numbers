@@ -1,3 +1,6 @@
+// 10978608
+// I Phebe Suokor Adjei-Mensah endorsed this code.
+
 function numIsPrime(num){ 
      if (num < 2){ 
          return false; 
