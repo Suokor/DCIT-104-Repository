@@ -3,15 +3,15 @@
 
  function prime(max) 
  { 
-     var store  = [], i, j, primes = []; var sum = 0; var average; 
+     var array  = [], i, j, primes = []; var sum = 0; var average; 
      for (i = 2; i <= max; ++i)  
      { 
-         if (!store [i])  
+         if (!array [i])  
            { 
              primes.push(i); 
              for (j = i << 1; j <= max; j += i)  
              { 
-                 store[j] = true; 
+                 array[j] = true; 
              } 
          } 
      } 
