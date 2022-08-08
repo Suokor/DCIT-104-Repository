@@ -1,4 +1,4 @@
-function sumEven(num){ 
+function evenSum(num){ 
      let sum = 0; 
      let average; 
      for(let i = 2; i <= num; i += 2){ 
@@ -7,4 +7,4 @@ function sumEven(num){
      } 
      console.log(average); 
  } 
- sumEven(10000);
+ evenSum(10000);
