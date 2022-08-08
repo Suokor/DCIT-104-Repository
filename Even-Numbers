@@ -1,3 +1,6 @@
+// 10978608
+// I Phebe Suokor Adjei-Mensah endorsed this code.
+
 function evenSum(num){ 
      let sum = 0; 
      let average; 
