@@ -1,38 +1,26 @@
 // 10978608
 // I Phebe Suokor Adjei-Mensah endorsed this code.
 
-function numIsPrime(num){ 
-     if (num < 2){ 
-         return false; 
-     } 
-     if (num === 2){ 
-         return true; 
-     } 
-  
-     for(let i = 2; i < num; i++){ 
-             if(num % i == 0){ 
-                 return false; 
+ function prime(max) 
+ { 
+     var store  = [], i, j, primes = []; var sum = 0; var average; 
+     for (i = 2; i <= max; ++i)  
+     { 
+         if (!store [i])  
+           { 
+             primes.push(i); 
+             for (j = i << 1; j <= max; j += i)  
+             { 
+                 store[j] = true; 
              } 
-             else{ 
-                 return true; 
-             } 
+         } 
      } 
-  
- } 
-  
-  
- function average(nums) { 
-  
- let sum = 0; 
- let totalNums = 0; 
-  
- for( let i = 0; i < nums; i++){ 
-     if (numIsPrime(i)) { 
-         sum += i; 
-         totalNums++; 
+     for(let i = 0; i < primes.length; i++){ 
+         sum += primes[i] 
      } 
+     average = sum/primes.length; 
+     console.log(average); 
+     return primes; 
  } 
- console.log(sum/totalNums); 
   
- } 
- average(7);
+ console.log(prime(30));
